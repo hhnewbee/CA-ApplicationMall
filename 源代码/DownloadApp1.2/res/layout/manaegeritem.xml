@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+        
+        <LinearLayout
+            android:id="@+id/randomsoftware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+            	android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1.0"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#575757"
+                android:text="管理"
+                android:textSize="20dp" />
+            
+       	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1.0"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+            
+         	<ImageView 
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginTop="10dp"
+			    android:layout_marginBottom="10dp"
+			    android:src="@drawable/manage_update"/>
+         
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="应用升级"
+                android:textSize="18dp" 
+                android:textColor="#4F4F4F"
+                android:id="@+id/upgradetext"/>
+        </LinearLayout>
+        
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1.0"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+           <ImageView 
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginTop="10dp"
+			    android:layout_marginBottom="10dp"
+			    android:src="@drawable/manage_downloadline"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="下载队列"
+                android:textSize="18dp" 
+                android:textColor="#4F4F4F"
+                android:id="@+id/downloadlinetext"
+                />
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1.0"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="我的安装"
+                android:textSize="20dp" 
+                android:textColor="#575757"/>
+            
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1.0"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+            
+       	 <ImageView 
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginTop="10dp"
+			    android:layout_marginBottom="10dp"
+			    android:src="@drawable/manage_install"/>
+         <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="下载记录"
+                android:textSize="18dp"
+                android:textColor="#4F4F4F" 
+                android:id="@+id/installrecordtext"/>
+        </LinearLayout>
+         
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

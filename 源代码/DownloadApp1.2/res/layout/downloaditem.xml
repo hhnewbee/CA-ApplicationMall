@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:id="@+id/downloadinfo" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAEAEA"
+        />
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:background="#ffffff"
+	    android:orientation="horizontal"
+     >
+    <ImageView
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="9dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/pictureshape"
+        android:id="@+id/softwarepicture"/>
+   	<LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+      >
+        <TextView
+            android:text="名字"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="3dp"
+          	android:textSize="16dp"
+          	android:textColor="#000000"
+            android:id="@+id/downloaditemname"/>
+        <TextView
+            android:text="大小"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+          	android:textColor="#000000"
+            android:id="@+id/downloaditemsize"/>
+         <TextView
+            android:text="介绍"
+            android:textColor="#4F4F4F"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/softwareinformation"
+          	/>
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="下载"
+            android:background="@drawable/downloadbutton"
+            android:height="30dp" 
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/downloadingbutton"
+            />
+    
+</LinearLayout>
+</LinearLayout>
