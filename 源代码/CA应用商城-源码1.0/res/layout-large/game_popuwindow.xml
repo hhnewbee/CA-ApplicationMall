@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/game1"
+        android:textColor="#4f4f4f"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/selector_downloaditem"
+        android:tag="@string/gurl1"
+        android:id="@+id/game1"/>
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/game2"
+        android:textColor="#4f4f4f"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/selector_downloaditem"
+        android:layout_marginLeft="1dp"
+        android:tag="@string/gurl2"
+        android:id="@+id/game2"/>
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/game3"
+        android:textColor="#4f4f4f"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/selector_downloaditem"
+        android:layout_marginLeft="1dp"
+        android:tag="@string/gurl3"
+        android:id="@+id/game3"/>
+ </LinearLayout>
+ 
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="40dp"
+        android:gravity="center"
+         android:text="@string/game4"
+        android:textColor="#4f4f4f"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/selector_downloaditem"
+        android:tag="@string/gurl4"
+        android:id="@+id/game4"/>
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="40dp"
+        android:gravity="center"
+         android:text="@string/game5"
+        android:textColor="#4f4f4f"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/selector_downloaditem"
+        android:layout_marginLeft="1dp"
+        android:tag="@string/gurl5"
+        android:id="@+id/game5"/>
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/game6"
+        android:textColor="#4f4f4f"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/selector_downloaditem"
+        android:layout_marginLeft="1dp"
+        android:tag="@string/gurl6"
+        android:id="@+id/game6"/>
+</LinearLayout>
+</LinearLayout>

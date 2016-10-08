@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.downloadui"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    
+    <application
+        android:name="com.example.downlaodui.infodata.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+       	 <receiver android:name="com.example.downloadui.itemview.UIrefreshbroadcast">
+            <intent-filter>
+                <action android:name="tuijian"/>
+                <action android:name="suiji"/>
+                <!--不支持@string/url3的方式-->
+                <action android:name="xinkuyingyong"/>
+                <action android:name="tongxunshejiao"/>
+                <action android:name="youxiyule"/>
+                <action android:name="xinwenyuedu"/>
+                <action android:name="bangongshangwu"/>
+                <action android:name="bianjieshenghuo"/>
+                <action android:name="yingyinshiting"/>
+                <action android:name="zhutibizhi"/>
+                <action android:name="yuermuying"/>
+                <action android:name="jiaotongdaohang"/>
+                <action android:name="xitonganquan"/>
+                
+                <action android:name="dongzuojingji"/>
+                <action android:name="juesebanyan"/>
+                <action android:name="fuzhugongju"/>
+                <action android:name="celuemaoxian"/>
+                <action android:name="qipaitiyu"/>
+                <action android:name="xiuxianyizhi"/>
+                      
+                <action android:name="search"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.example.downloadui.managerView.Informbroadcast">
+            <intent-filter>
+                <action android:name="tuijianrefreshitem"/>
+                <action android:name="classifyrefreshitem"/>
+                <action android:name="suijirefreshitem"/>
+                <action android:name="internectalert"/>
+            </intent-filter>
+        </receiver>
+        
+       <receiver android:name="com.example.downloadui.installApk.AppInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" /> 
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        
+       <activity
+            android:name="com.example.downloadui.MainActivity"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            
+        </activity>
+        <activity android:name="com.example.downloadui.info.Infoactivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.downloadui.info.Downloadlineactivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.downloadui.info.Installrecordactiviy" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.downloadui.info.Upgradeactivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.downloadui.Webactivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.downloadui.sidebar.Intro" android:screenOrientation="portrait"></activity>
+		<service android:name="com.example.downloadui.jsonservic.JsonService" android:screenOrientation="portrait"></service>
+        
+    </application>
+  <supports-screens
+	 android:largeScreens="true"
+	 android:xlargeScreens="true"
+     android:normalScreens="true"
+ 	 android:anyDensity = "true"/>
+</manifest>
